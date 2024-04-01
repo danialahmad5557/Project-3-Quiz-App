@@ -385,7 +385,57 @@ footer button.show{
 }
 
 .buttons button.quit{
-    color: #007bff;
+    color: #007bff;/* Regular CSS styles */
+
+@media screen and (max-width: 450px) {
+  /* CSS styles for screens with a maximum width of 450px */
+  .start_btn,
+  .info_box,
+  .quiz_box,
+  .result_box {
+    width: 90%;
+    max-width: 90%;
+  }
+
+  .quiz_box header .timer {
+    width: 120px;
+  }
+
+  /* Add more specific styles for smaller screens as needed */
+}
+/* Regular CSS styles */
+
+@media screen and (max-width: 450px) {
+  /* CSS styles for screens with a maximum width of 450px */
+  .start_btn {
+    width: 100%;
+    text-align: center; /* Align button and input to the center */
+  }
+
+  .start_btn button {
+    width: 100%; /* Make the button full width */
+    margin-top: 10px; /* Add some space between the input and button */
+  }
+
+  .start_btn input {
+    width: 100%; /* Make the input full width */
+  }
+
+  /* Add more specific styles for smaller screens as needed */
+}
+
+/* Regular CSS styles */
+
+@media screen and (max-width: 450px) {
+  /* CSS styles for screens with a maximum width of 450px */
+  .buttons button {
+    width: 100%; /* Make the buttons full width */
+    margin-top: 10px; /* Add some space between the buttons */
+  }
+
+  /* Add more specific styles for smaller screens as needed */
+}
+
     background: #fff;
 }
 
